@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>SP Gallery</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <h1>Gaming</h1>
+        <a class="mode" id="lightmode" onclick="light_mode3('white', 'black');"><b>| Light mode |</b></a>
+        <a class="mode" id="darkmode" onclick="dark_mode3('black', 'white');"><b>| Dark mode |</b></a>
+
+        <div class="navbar">
+            <a href="Gaming1.html">Home</a>
+            <a href="Gaming2.html">E-sports</a>
+            <div class="dropdown">
+                <span class="dropbtn">
+                    <a href="Gaming3.html" class="active">Gallery</a>
+                    <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-content">
+                    <a href="GEsp.html">E-sport games</a>
+                    <a href="GSP.html">Single Player games</a>
+                    <a href="GMP.html">Multiplayer games</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="content3">
+
+        <div class="SingleP">
+            <h2>Some of the most popular Singleplayer games:</h2>
+            <div class="gallery">
+                <a target="_blank" href="https://elderscrolls.bethesda.net/en/skyrim" onclick="count_visits_SP();">
+                    <img src="imgs/tesv.jpg" alt="The Elder Scrolls V: Skyrim" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">The Elder Scrolls V: Skyrim, a role-playing game released on 7 different platforms over the years</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://thewitcher.com/en/" onclick="count_visits_SP();">
+                    <img src="imgs/tw3.jpg" alt="The Witcher 3" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">The Witcher 3, a single player role-playing game, often considered the best game ever made</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.stardewvalley.net/" onclick="count_visits_SP();">
+                    <img src="imgs/sv.jpg" alt="Stardew Valley" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Stardew Valley, a very popular casual game about farming and exploration </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rockstargames.com/V/" onclick="count_visits_SP();">
+                    <img src="imgs/gtav.jpg" alt="Grand Theft Auto V" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Grand Theft Auto V, one of the entries in the popular series of games about gangsters</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://godofwar.playstation.com/" onclick="count_visits_SP();">
+                    <img src="imgs/gow.jpg" alt="God of War" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">God of War, an action adventure game that proved that single player games are still popular</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2/" onclick="count_visits_SP();">
+                    <img src="imgs/rdr2.jpg" alt="Red Dead Redemption 2" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Red Dead Redemption 2, a role-playing game with a vast and detailed world that's still not fully explored</div>
+            </div>
+        </div>
+
+        <form action="/form_submissions.php" method="post">
+            <h3>Did we miss your favourite game? Let us know and if we add it your name will be displayed!</h3>
+            <label for="name">Your name (that will be displayed): </label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="game">The game you'd like added: </label><br />
+            <input type="text" id="game" name="game" /><br />
+            <label for="gametype">What kind of game is it?</label><br />
+            <select name="gametype" id="gametype">
+                <option value="none">I'm not sure</option>
+                <option value="SP">Singleplayer</option>
+                <option value="MP">Multiplayer</option>
+                <option value="Esp">E-sport</option>
+            </select><br />
+            <label for="reason">Explain why the game is worth displaying on the site:</label><br />
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br />
+            <input type="radio" id="yes" name="display" value="yes" />
+            <label for="yes">I want my name displayed</label>
+            <input type="radio" id="no" name="display" value="no" />
+            <label for="no">Please don't display my name</label><br />
+            <input type="checkbox" name="agree" value="agree" />
+            I understand that what I wrote will be read by a fellow human and made sure it's readable, polite and and well thought out.<br />
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <footer>Copyright&copy; 2020, Adam Wawroń</footer>
+
+</body>
+</html>

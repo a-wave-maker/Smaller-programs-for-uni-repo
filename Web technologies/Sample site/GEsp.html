@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>Esp Gallery</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <h1>Gaming</h1>
+        <a class="mode" id="lightmode" onclick="light_mode3('white', 'black');"><b>| Light mode |</b></a>
+        <a class="mode" id="darkmode" onclick="dark_mode3('black', 'white');"><b>| Dark mode |</b></a>
+
+        <div class="navbar">
+            <a href="Gaming1.html">Home</a>
+            <a href="Gaming2.html">E-sports</a>
+            <div class="dropdown">
+                <span class="dropbtn">
+                    <a href="Gaming3.html" class="active">Gallery</a>
+                    <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-content">
+                    <a href="GEsp.html">E-sport games</a>
+                    <a href="GSP.html">Single Player games</a>
+                    <a href="GMP.html">Multiplayer games</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="content3">
+
+        <div class="Esports">
+            <h2>Some of the most popular E-sport games:</h2>
+            <div class="gallery">
+                <a target="_blank" href="https://starcraft2.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/sc2.jpg" alt="Starcraft 2" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Starcraft 2, a real time strategy game, possibly the oldest E-sport title in the world</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rocketleague.com/" onclick="count_visits_Esp();">
+                    <img src="imgs/rl.jpg" alt="Rocket League" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Rocket League, a unique game combining driving and football in an interesting and demanding way</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://blog.counter-strike.net/" onclick="count_visits_Esp();">
+                    <img src="imgs/csgo.jpg" alt="Counter Strike: Global Offensive" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Counter Strike: Global Offensive, a team based shooter that took part in making E-sports so popular</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://playoverwatch.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/ow.jpg" alt="Overwatch" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Overwatch, a team based hero shooter, another game that's easy to learn but hard to master</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege" onclick="count_visits_Esp();">
+                    <img src="imgs/r6s.jpg" alt="Tom Clancy's Rainbow Six Siege" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Rainbow Six Siege, an objective based shooter with an impressive environment destruction model</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://na.leagueoflegends.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/lol.jpg" alt="League of Legends" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">League of Legends, a Multiplayer Online Battle Arena game, possibly the biggest E-sport at the moment</div>
+            </div>
+        </div>
+
+        <form action="/form_submissions.php" method="post">
+            <h3>Did we miss your favourite game? Let us know and if we add it your name will be displayed!</h3>
+            <label for="name">Your name (that will be displayed): </label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="game">The game you'd like added: </label><br />
+            <input type="text" id="game" name="game" /><br />
+            <label for="gametype">What kind of game is it?</label><br />
+            <select name="gametype" id="gametype">
+                <option value="none">I'm not sure</option>
+                <option value="SP">Singleplayer</option>
+                <option value="MP">Multiplayer</option>
+                <option value="Esp">E-sport</option>
+            </select><br />
+            <label for="reason">Explain why the game is worth displaying on the site:</label><br />
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br />
+            <input type="radio" id="yes" name="display" value="yes" />
+            <label for="yes">I want my name displayed</label>
+            <input type="radio" id="no" name="display" value="no" />
+            <label for="no">Please don't display my name</label><br />
+            <input type="checkbox" name="agree" value="agree" />
+            I understand that what I wrote will be read by a fellow human and made sure it's readable, polite and well thought out.<br />
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <footer>Copyright&copy; 2020, Adam Wawroń</footer>
+
+</body>
+</html>

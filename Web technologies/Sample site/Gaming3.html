@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>Gallery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js" type="text/javascript"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <h1>Gaming</h1>
+        <a class="mode" id="lightmode" onclick="light_mode3('white', 'black');"><b>| Light mode |</b></a>
+        <a class="mode" id="darkmode" onclick="dark_mode3('black', 'white');"><b>| Dark mode |</b></a>
+        <div class="navbar">
+            <a href="Gaming1.html">Home</a>
+            <a href="Gaming2.html">E-sports</a>
+            <div class="dropdown">
+                <span class="dropbtn">
+                    <a id="G3" class="active" href="Gaming3">Gallery</a>
+                    <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-content">
+                    <a id="GEsp" href="GEsp.html">E-sport games</a>
+                    <a id="GSP" href="GSP.html">Singleplayer games</a>
+                    <a id="GMP" href="GMP.html">Multiplayer games</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="content3">
+
+
+        <div class="login">
+            <form method="post" action="" name="signin-form">
+                <div class="form-element">
+                    <label>Username</label>
+                    <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+                </div>
+                <div class="form-element">
+                    <label>Password</label>
+                    <input type="password" name="password" required />
+                </div>
+                <button type="submit" name="login" value="login">Log In</button>
+            </form>
+        </div>
+
+
+        <div class="Esports">
+            <h2>Some of the most popular E-sport games:</h2>
+            <div class="gallery">
+                <a target="_blank" href="https://starcraft2.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/sc2.jpg" alt="Starcraft 2" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Starcraft 2, a real time strategy game, possibly the oldest E-sport title in the world</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rocketleague.com/" onclick="count_visits_Esp();">
+                    <img src="imgs/rl.jpg" alt="Rocket League" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Rocket League, a unique game combining driving and football in an interesting and demanding way</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://blog.counter-strike.net/" onclick="count_visits_Esp();">
+                    <img src="imgs/csgo.jpg" alt="Counter Strike: Global Offensive" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Counter Strike: Global Offensive, a team based shooter that took part in making E-sports so popular</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://playoverwatch.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/ow.jpg" alt="Overwatch" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Overwatch, a team based hero shooter, another game that's easy to learn but hard to master</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege" onclick="count_visits_Esp();">
+                    <img src="imgs/r6s.jpg" alt="Tom Clancy's Rainbow Six Siege" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">Rainbow Six Siege, an objective based shooter with an impressive environment destruction model</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://na.leagueoflegends.com/en-us/" onclick="count_visits_Esp();">
+                    <img src="imgs/lol.jpg" alt="League of Legends" width="400" height="600" onmouseover="count_hovers_Esp();">
+                </a>
+                <div class="desc">League of Legends, a Multiplayer Online Battle Arena game, possibly the biggest E-sport at the moment</div>
+            </div>
+        </div>
+
+        <div class="SingleP">
+            <h2>Some of the most popular Singleplayer games:</h2>
+            <div class="gallery">
+                <a target="_blank" href="https://elderscrolls.bethesda.net/en/skyrim" onclick="count_visits_SP();">
+                    <img src="imgs/tesv.jpg" alt="The Elder Scrolls V: Skyrim" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">The Elder Scrolls V: Skyrim, a role-playing game released on 7 different platforms over the years</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://thewitcher.com/en/" onclick="count_visits_SP();">
+                    <img src="imgs/tw3.jpg" alt="The Witcher 3" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">The Witcher 3, a single player role-playing game, often considered the best game ever made</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.stardewvalley.net/" onclick="count_visits_SP();">
+                    <img src="imgs/sv.jpg" alt="Stardew Valley" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Stardew Valley, a very popular casual game about farming and exploration </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rockstargames.com/V/" onclick="count_visits_SP();">
+                    <img src="imgs/gtav.jpg" alt="Grand Theft Auto V" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Grand Theft Auto V, one of the entries in the popular series of games about gangsters</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://godofwar.playstation.com/" onclick="count_visits_SP();">
+                    <img src="imgs/gow.jpg" alt="God of War" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">God of War, an action adventure game that proved that single player games are still popular</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.rockstargames.com/reddeadredemption2/" onclick="count_visits_SP();">
+                    <img src="imgs/rdr2.jpg" alt="Red Dead Redemption 2" width="400" height="600" onmouseover="count_hovers_SP();">
+                </a>
+                <div class="desc">Red Dead Redemption 2, a role-playing game with a vast and detailed world that's still not fully explored</div>
+            </div>
+        </div>
+
+        <div class="MultiP">
+            <h2>Some of the most popular Multiplayer games:</h2>
+            <div class="gallery">
+                <a target="_blank" href="https://www.bungie.net/7/en/Destiny/NewLight" onclick="count_visits_MP();">
+                    <img src="imgs/d2.jpg" alt="Destiny 2" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">Destiny 2, an online only multiplayer looter shooter with elements of PvE and PvP</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.l4d.com/blog/" onclick="count_visits_MP();">
+                    <img src="imgs/l4d2.jpg" alt="Left4Dead 2" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">Left4Dead 2, an old but still updated and played co-op zombie shooter</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://www.callofduty.com/modernwarfare" onclick="count_visits_MP();">
+                    <img src="imgs/codmw.jpg" alt="Call of Duty Modern Warfare" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">Call of Duty Modern Warfare, the newest installment in a popular series of fast-paced multiplayer shooters</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://worldoftanks.eu/" onclick="count_visits_MP();">
+                    <img src="imgs/wot.jpg" alt="World of Tanks" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">World of Tanks, one of many free-to-play games with a tree-based progression system</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://worldofwarcraft.com/en-us/" onclick="count_visits_MP();">
+                    <img src="imgs/wow.jpg" alt="World of Warcraft" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">World of Warcraft, one of the most popular Massively Multiplayer Online games of all time</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://arma3.com/" onclick="count_visits_MP();">
+                    <img src="imgs/a3.jpg" alt="ArmA 3" width="400" height="600" onmouseover="count_hovers_MP();">
+                </a>
+                <div class="desc">ArmA 3, a hardcore shooter with roleplaying elements, a "war simulator"</div>
+            </div>
+        </div>
+
+        <form action="/form_submissions.php" method="post">
+            <h3>Did we miss your favourite game? Let us know and if we add it your name will be displayed!</h3>
+            <label for="name">Your name (that will be displayed): </label><br />
+            <input type="text" id="name" name="name" title="It doesn't have to be your real name but please keep it civil." /><br />
+            <div class="ui-widget">
+                <label for="tags">The game you'd like added: </label><br />
+                <input id="tags" title="Insert the full title if you can so it's easier to understand" /><br />
+            </div>
+            <label for="gametype">What kind of game is it?</label><br />
+            <select name="gametype" id="gametype">
+                <option value="none">I'm not sure/Other</option>
+                <option value="SP">Singleplayer</option>
+                <option value="MP">Multiplayer</option>
+                <option value="Esp">E-sport</option>
+            </select><br />
+            <label for="reason">Explain why the game is worth displaying on the site:</label><br />
+            <textarea id="reason" name="reason" rows="4" cols="50" title="This should be the easy part if you really love the game :)"></textarea><br />
+            <input type="radio" id="yes" name="display" value="yes" />
+            <label for="yes">I want my name displayed</label>
+            <input type="radio" id="no" name="display" value="no" />
+            <label for="no">Please don't display my name</label><br />
+            <input type="checkbox" name="agree" value="agree" />
+            I understand that what I wrote will be read by a fellow human and made sure it's readable, polite and well thought out.<br />
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <footer>Copyright&copy; 2020, Adam Wawroń</footer>
+
+</body>
+</html>

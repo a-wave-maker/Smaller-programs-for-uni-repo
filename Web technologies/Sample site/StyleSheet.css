@@ -1,0 +1,432 @@
+html {
+    background-color: black;
+    font-family: Arial;
+}
+
+login.label {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+login.input {
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 10px;
+}
+login.form {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    width: 500px;
+    background: #eee;
+}
+div.form-element {
+    margin: 20px 0;
+}
+login.button {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: yellowgreen;
+    color: white;
+    border: none;
+}
+p.success,
+p.error {
+    color: white;
+    font-family: lato;
+    background: yellowgreen;
+    display: inline-block;
+    padding: 2px 10px;
+}
+p.error {
+    background: orangered;
+}
+
+#content {
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    color: white;
+    background-color: black;
+    box-shadow: 12px 12px 7px darkred;
+    align-content: center;
+    font-size:large;
+}
+#content::first-letter {
+    text-shadow: -2px -2px red;
+}
+p::first-letter {
+    text-shadow: -1px -1px red;
+}
+#content3 {
+    display: grid;
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    color: white;
+    background-color: black;
+    box-shadow: 12px 12px 7px darkred;
+    align-content: center;
+}
+footer {
+    height: 50px;
+    background: black;
+    color: white;
+    box-shadow: 12px 12px 7px darkred;
+    text-align: center;
+    margin-top: 2%;
+    padding: 5px;
+}
+title {
+    color: white;
+    text-align: center;
+}
+header {
+    text-align: center;
+    color: white;
+    height: 100px;
+    background: darkred;
+}
+.mode {
+    color: black;
+    font-size: medium;
+}
+.mode:hover {
+    cursor: pointer;
+    text-shadow: -0.5px -0.5px blue;
+}
+h1 {
+    padding-top: 15px;
+    font-size: xx-large;
+}
+div.gallery {
+    color: white;
+    border: 1px solid #ccc;
+    width: 180px;
+    height: 395px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    background-color: black;
+}
+@keyframes gallery {
+    0%   {transform: scale(1.05)}
+    25%  {transform: scale(1.1)}
+    50%  {transform: scale(1.15)}
+    75%  {transform: scale(1.2)}
+    100% {transform: scale(1.25)}
+}
+div.gallery:hover {
+    border: 1px solid #777;
+    animation-name: gallery;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+div.gallery img {
+    width: 100%;
+    height: 260px;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    padding-bottom: 0;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px darkred;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    outline: solid red 1px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.active {
+    border-bottom: darkred solid 3px;
+}
+table {
+    border: 5px solid darkred;
+    align-content: center;
+}
+th, td, tr {
+    border: 2px solid darkred;
+    height: 50px;
+    width: 650px;
+    font-size: large;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+caption {
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+.espg ~ .SingleP ~ .MultiP {
+    display: none;
+}
+.spg ~ .Esports ~ .MultiP {
+    display: none;
+}
+.mpg ~ .Esports ~ .SingleP {
+    display: none;
+}
+.form {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+input {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 16%;
+}
+input, radio {
+    width: auto;
+}
+input[type=checkbox] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+form {
+    margin-bottom: 20px;
+}
+.intextimg {
+    max-height: 450px;
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+svg {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+a {
+    color: red;
+}
+
+.demoHeaders {
+    margin-top: 2em;
+}
+#dialog-link {
+    padding: .4em 1em .4em 20px;
+	text-decoration: none;
+    position: relative;
+}
+#dialog-link span.ui-icon {
+    margin: 0 5px 0 0;
+	position: absolute;
+    left: .2em;
+	top: 50%;
+    margin-top: -8px;
+}
+#icons {
+	margin: 0;
+    padding: 0;
+}
+#icons li {
+	margin: 2px;
+    position: relative;
+	padding: 4px 0;
+    cursor: pointer;
+	float: left;
+    list-style: none;
+}
+#icons span.ui-icon {
+	float: left;
+    margin: 0 4px;
+}
+.fakewindowcontain .ui-widget-overlay {
+    position: absolute;
+}
+select {
+		width: 200px;
+}
+
+.ui-tooltip, .arrow:after {
+		background: black;
+		border: 2px solid white;
+	}
+	.ui-tooltip {
+		padding: 10px 20px;
+		color: white;
+		border-radius: 20px;
+		font: bold 14px "Helvetica Neue", Sans-Serif;
+		text-transform: uppercase;
+		box-shadow: 0 0 7px black;
+	}
+	.arrow {
+		width: 70px;
+		height: 16px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -35px;
+		bottom: -16px;
+	}
+	.arrow.top {
+		top: -16px;
+		bottom: auto;
+	}
+	.arrow.left {
+		left: 20%;
+	}
+	.arrow:after {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: -20px;
+		width: 25px;
+		height: 25px;
+		box-shadow: 6px 5px 9px -9px black;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.arrow.top:after {
+		bottom: -20px;
+		top: auto;
+	}
+
+
+@media only screen and (max-width: 900px) {
+    img {
+        align-content: baseline;
+        max-width: 135px;
+        max-height: 190px;
+    }
+    .intextimg {
+        max-height: 200px;
+        max-width: 300px;
+    }
+    div.gallery {
+        max-width: 135px;
+        max-height: 400px;
+        font-size: medium;
+    }
+    #content {
+        width: 15em;
+        position: relative;
+        top: 30px;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        margin-left: 5%;
+        align-content: center;
+        box-shadow: none;
+    }
+    #content3 {
+        width: 18em;
+        position: relative;
+        top: 30px;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        align-content: center;
+        margin-left: 5%;
+    }
+    footer {
+        height: 5em;
+        text-align: center;
+    }
+    table {
+        display: none;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        max-width: 300px;
+    }
+    h3 {
+        max-width: 300px;
+    }
+    textarea {
+        max-width: 280px;
+    }
+    select {
+        width: 50%;
+    }
+    input, radio{
+        display: flex;
+    }
+    div.gallery:hover {
+        border: 1px solid #777;
+        animation: none;
+    }
+    .mode {
+        display: none;
+    }
+}
